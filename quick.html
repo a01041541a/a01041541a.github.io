@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quick Tips</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body {}
+
+        .glyphicon {
+            font-size: 40pt;
+            margin-left: 80%;
+            position: absolute;
+        }
+
+        #div1 {
+            height: 667px;
+            width: 385px;
+            overflow: scroll;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="tips.html">
+          <span class="glyphicon glyphicon-chevron-left" id="back"></span>
+          </a>
+    <img id="div1" src="images/kidp.jpg">
+
+    <script>
+        var img = document.getElementById('div1');
+        var back = document.getElementById('back');
+        if (screen.width == 320 && screen.height == 568) {
+            img.style.width = "320px";
+            img.style.height = "568px";
+            img.style.overflow = "scroll";
+            bacl.style.marginLeft = "80%";
+        }
+    </script>
+</body>
+
+</html>

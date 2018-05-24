@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Indoor Tips</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/indoor-style.css">
+</head>
+
+<body>
+    <div class="background-image" id="back-img"></div>
+    <div class="content" id="con">
+        <h1 id="h1tag">Indoor Tips</h1>
+        <a href="tips.html">
+          <span class="glyphicon glyphicon-chevron-left" id="back"></span>
+        </a>
+        <ul>
+            <li>Install a low flow or trickle valve shower head.</li>
+            <li>Take a five minute (or less) shower.</li>
+            <li>Turn off water while lathering your hands in the sink.</li>
+            <li>Turn water off while brushing teeth or shaving.</li>
+            <li>Plug the sink instead of running water to rinse your razor</li>
+            <li>Check for and repair leaks in the tub diverter valve.</li>
+            <li>Never pour water down the drain when there may be another use for it such as watering a plant or garden or for cleaning.</li>
+            <li>Avoid recreational water toys that require a constant flow of water.</li>
+            <li>Collect the water you use while rinsing fruit and vegetables. Use it to water house plants.</li>
+        </ul>
+    </div>
+    <script>
+        var content = document.getElementById('con');
+        var back = document.getElementById('back-img');
+        var h1tag = document.getElementById('h1tag');
+
+
+        if (screen.width == 320 && screen.height == 568) {
+
+            content.style.position = "absolute";
+            content.style.marginTop = "-220%";
+            content.style.height = "700px";
+            content.style.width = "330px";
+            content.style.marginLeft = "15px";
+
+            back.style.width = "330px";
+            back.style.height = "700px"
+
+            h1tag.style.marginLeft = "10%";
+        }
+    </script>
+</body>
+
+</html>

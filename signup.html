@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/signup-style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<img id = "sun" src="images/hp.png">
+				</button>
+                <a class="navbar-brand" href="index.html">
+                    <div id="title">Wave</div>
+                </a>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user" id="logged"></span>
+                </button>
+                <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="nav">
+                        <li>
+                            <a class="dropdown-item" id="item11"></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" id="item12"></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--
+            <script>
+                if (localStorage.getItem("loginStatus") == "true") {
+                    var name;
+                    var a1 = document.getElementById("item11");
+                    name = localStorage.getItem("currentUser");
+                    var text = document.createTextNode(name);
+                    a1.appendChild(text);
+
+                    var a2 = document.getElementById("item12");
+                    var text2 = document.createTextNode("Log-out");
+                    a2.setAttribute("onclick", "logout()");
+                    a2.setAttribute("href", "index.html");
+                    a2.appendChild(text2);
+                } else {
+                    var a1 = document.getElementById("item11");
+                    var text = document.createTextNode("Log-in");
+                    a1.setAttribute("href", "login.html");
+                    a1.appendChild(text);
+
+                    var a2 = document.getElementById("item12");
+                    var text2 = document.createTextNode("Sign-up");
+                    a2.setAttribute("href", "signup.html");
+                    a2.appendChild(text2);
+                }
+
+                function logout() {
+                    localStorage.setItem("loginStatus", "false");
+                }
+            </script>
+            -->
+            <script src="./js/userstatus.js"></script>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Home</span></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Gallery</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Photos.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Photos</span></a></li>
+                            <li><a href="#"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Videos</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="articles.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Articles</span></a></li>
+                    <li><a href="tips.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Tips</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html" style="background-color: gray"><span class="glyphicon glyphicon-user" style="color:purple; font-size: 18pt"></span><span style="color:purple; font-family:grinchedregular; font-size: 20pt"> Sign Up</span></a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in" style="color:purple; font-size: 18pt"></span><span style="color:purple; font-family:grinchedregular; font-size: 20pt"> Login</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card card-container">
+            <a href="matrix.html">
+		 <img id="profile-img" class="profile-img-card" src="images/kids.jpeg" /></a>
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" method="GET">
+
+                <span id="reauth-email" class="reauth-email"></span>
+                <label for="email"><b>Username</b></label>
+
+                <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="password1" class="form-control" placeholder="Password" required>
+                <label for="psw-repeat"><b>Re-type Password</b></label>
+                <input type="password" id="password2" class="form-control" placeholder="Re-Type Password" required>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" onclick="signup()">Sign up</button>
+            </form>
+            <!-- /form -->
+            <!--<a href="login.html" class="login">Already have an account?</a>-->
+            <span class="psw">Already have an account? <a href="login.html">Back to login Page.</a></span>
+        </div>
+        <!-- /card-container -->
+    </div>
+    <!-- /container -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDRQYn7si6Y_rnXzbpQcaO2cgktr1hbesE",
+            authDomain: "waave-a-plus.firebaseapp.com",
+            databaseURL: "https://waave-a-plus.firebaseio.com",
+            projectId: "waave-a-plus",
+            storageBucket: "waave-a-plus.appspot.com",
+            messagingSenderId: "286145905753"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!--
+    <script>
+        var dbRefObject = firebase.database().ref().child('Users');
+        var dataSnapshot;
+
+        dbRefObject.once('value', function(snapshot) {
+            //alert("I am in the reading function." + userName + ": " + passWord);
+            console.log("In once() method.");
+            console.log(snapshot.val());
+
+            dataSnapshot = snapshot;
+
+        });
+
+
+        //Sync object changes
+        //dbRefObject.on('value', snap => console.log(snap.val()));
+
+        function signup() {
+            var username = document.getElementById('username').value;
+            var pwd1 = document.getElementById('password1').value;
+            var pwd2 = document.getElementById('password2').value;
+            var isPwdNotEqual = false;
+            var isUserRepeat = false;
+
+            if (pwd1 != pwd2) {
+                isPwdNotEqual = true;
+                alert("Password are not equal");
+
+            } else {
+
+                dataSnapshot.forEach(function(childSnapshot) {
+                    var childKey = childSnapshot.key;
+                    var childData = childSnapshot.val();
+                    console.log(username + "--- " + childData['user_name']); // ...
+
+                    if (username == childData['user_name']) {
+                        isUserRepeat = true;
+                        console.log("isUerRepeat = true");
+                    }
+                });
+
+                //alert("come here now " + isUserRepeat);
+
+                if (isUserRepeat == true) {
+                    // document.getElementById('resultDisp').innerHTML = "Forget Password  (User Repeat)";
+
+                    console.log("Repeat user");
+
+                    alert("Repeat user!")
+
+                    //           dbRefObject.push().set({
+                    //               name: user_name,
+                    //               password: pwd1
+                    //           });
+
+                } else {
+                    var data = {
+                        //user_id: uid,
+                        user_name: username,
+                        user_pwd: pwd1,
+                        user_score: 0
+                    }
+
+                    //var updates = {};
+                    //updates['Users'] = data;
+
+                    dbRefObject.push().set(data);
+
+                    alert("User is created successfully!");
+
+                }
+
+                isUserRepeat = false;
+            }
+        }
+
+    </script> -->
+    <script src="./js/signup.js"></script>
+
+</body>
+
+</html>

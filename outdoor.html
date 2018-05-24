@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Outdoor Tips</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/outdoor-style.css">
+</head>
+
+<body>
+    <div class="background-image" id="back-img"></div>
+    <div class="content" id="con">
+        <h1 id="h1tag">Outdoor Tips</h1>
+        <a href="tips.html">
+          <span class="glyphicon glyphicon-chevron-left" id="back"></span>
+        </a>
+        <ul>
+            <li>Use a broom, not a hose, to clean driveways and sidewalks.</li>
+            <li>Don’t water grass lawns at all during a drought.</li>
+            <li>Put at least a 3-4″ layer of mulch around trees and plants to retain moisture and keep the soil cool.</li>
+            <li>Choose a water-efficient irrigation system such as drip irrigation for your trees, shrubs, and flowers.</li>
+            <li>Consider a new water-saving pool filter. A single back-flushing with a traditional filter uses 180 to 250 gallons of water.</li>
+            <li>Grass-cycle by leaving your grass clippings on the lawn to decompose and return nutrients to the soil.</li>
+
+        </ul>
+    </div>
+    <script>
+        var content = document.getElementById('con');
+        var back = document.getElementById('back-img');
+        var h1tag = document.getElementById('h1tag');
+
+
+        if (screen.width == 320 && screen.height == 568) {
+
+            content.style.position = "absolute";
+            content.style.marginTop = "-200%";
+            content.style.height = "570px";
+            content.style.width = "320px";
+            content.style.marginLeft = "15px";
+
+            back.style.width = "330px";
+
+            h1tag.style.marginLeft = "10%";
+        }
+    </script>
+</body>
+
+</html>

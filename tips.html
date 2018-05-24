@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tips</title>
+    <meta charset="utf-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/tips-style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<img id = "sun" src="images/hp.png">
+				</button>
+                <a class="navbar-brand" href="index.html">
+                    <div id="title">Wave</div>
+                </a>
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user" id="logged"></span>
+                </button>
+                <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenuButton">
+                    <ul class="nav">
+                        <li>
+                            <a class="dropdown-item" id="item1"></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" id="item2"></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--
+            <script>
+                if (localStorage.getItem("loginStatus") == "true") {
+                    var name;
+                    var a1 = document.getElementById("item1");
+                    name = localStorage.getItem("currentUser");
+                    var text = document.createTextNode(name);
+                    a1.appendChild(text);
+
+                    var a2 = document.getElementById("item2");
+                    var text2 = document.createTextNode("Log-out");
+                    a2.setAttribute("onclick", "logout()");
+                    a2.setAttribute("href", "index.html");
+                    a2.appendChild(text2);
+                } else {
+                    var a1 = document.getElementById("item1");
+                    var text = document.createTextNode("Log-in");
+                    a1.setAttribute("href", "login.html");
+                    a1.appendChild(text);
+
+                    var a2 = document.getElementById("item2");
+                    var text2 = document.createTextNode("Sign-up");
+                    a2.setAttribute("href", "signup.html");
+                    a2.appendChild(text2);
+                }
+
+                function logout() {
+                    localStorage.setItem("loginStatus", "false");
+                }
+            </script>
+            -->
+            <script src="./js/userstatus.js"></script>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Home</span></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Gallery</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Photos.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Photos</span></a></li>
+                            <li><a href="Video.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Videos</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="articles.html"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Articles</span></a></li>
+                    <li><a href="tips.html" style="background-color: gray"><span style="color:purple; font-family:grinchedregular; font-size: 20pt">Tips</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user" style="color:purple; font-size: 18pt"></span><span style="color:purple; font-family:grinchedregular; font-size: 20pt"> Sign Up</span></a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in" style="color:purple; font-size: 18pt"></span><span style="color:purple; font-family:grinchedregular; font-size: 20pt"> Login</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Tips</h1>
+    <br><br>
+    <a href="indoor.html">
+	<button type="button" class="btn btn-danger" id="btn1">Indoor Tips</button>
+	</a>
+    <a href="outdoor.html">
+	<button type="button" class="btn btn-danger" id="btn2">Outdoor Tips</button>
+	</a>
+    <a href="quick.html">
+		<button type="button" class="btn btn-danger"  id="btn3">5 Quick-Tips</button>
+	</a>
+</body>
+
+</html>
