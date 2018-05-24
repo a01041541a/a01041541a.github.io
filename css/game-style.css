@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+#time {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration-color: #ff1111;
+    text-decoration-style: wavy;
+    color: aqua;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+}
+
+@media screen and (min-width: 0px) and (max-width: 347.4px) {
+    #blocks0 {
+        left: 0px;
+        top: 0px;
+        width: 34.64%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks1 {
+        left: 200px;
+        top: 0px;
+        width: 34.64%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks2 {
+        left: 0px;
+        top: 111.23px;
+        height: 18.1%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks3 {
+        left: 65.84px;
+        top: 111.96px;
+        height: 18.10%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks4 {
+        left: 150px;
+        top: 98.47px;
+        height: 18.1%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks5 {
+        left: 284px;
+        top: 97.74px;
+        height: 18.1%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks6 {
+        left: 193.59px;
+        top: 109.77px;
+        height: 18.1%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks7 {
+        left: 285px;
+        top: 319.11px;
+        height: 18.1%;
+        width: auto;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    #blocks8 {
+        left: 190.96px;
+        top: 209.7px;
+        width: 22.1%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks9 {
+        left: 85px;
+        top: 274.25px;
+        width: 34.64%;
+        height: auto;
+        position: absolute;
+    }
+    #items0 {
+        left: 160.67px;
+        top: 44.85px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+    }
+    #items1 {
+        left: 32.92px;
+        top: 196.21px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+    }
+    #items2 {
+        left: 257.4px;
+        top: 271.7px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+    }
+    #title {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 35px;
+        width: 320px;
+        border: solid 1px;
+        background-color: azure;
+        text-align: center;
+        font-size: 15px;
+        color: darkblue;
+        line-height: 6.5px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #time {
+        font-size: 18px;
+    }
+    #base {
+        touch-action: none;
+        background-image: url("../game_images/house10.png");
+        background-size: cover;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        width: 320px;
+        height: 432px;
+        border: solid 1px;
+    }
+
+    #fish {
+        height: 170px;
+        background-image: url("../game_images/fish.gif");
+        background-size: cover;
+        z-index: 5;
+    }
+    #water {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 5;
+        background-color: aqua;
+        height: 170px;
+        width: 90px;
+        opacity: 0.7;
+        max-height: 170px;
+        min-height: 3px;
+    }
+    #gamestart {
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        width: 280px;
+        height: 200px;
+        transform: scale(0.8);
+    }
+    #gameover {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        width: 320px;
+        height: 200px;
+        transform: scale(0.8);
+    }
+    #leaderBoard {
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        width: 280px;
+        height: 400px;
+        transform: scale(0.8);
+    }
+    #belowest {
+        position: absolute;
+        top: 467px;
+        left: 0px;
+        height: 80px;
+        width: 320px;
+        border: solid 1px;
+        background-color: #382F71;
+        border: solid 1px;
+    }
+}
+
+@media screen and (min-width: 347.5px) and (max-width: 394.5px) {
+    #blocks0 {
+        left: 0px;
+        top: 0px;
+        width: 40.63%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks1 {
+        left: 216.64px;
+        top: 0px;
+        width: 40.63%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks2 {
+        left: 0px;
+        top: 130.45px;
+        height: 21.20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks3 {
+        left: 77.09px;
+        top: 131.31px;
+        height: 21.20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks4 {
+        left: 167.29px;
+        top: 115.48px;
+        height: 21.20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks5 {
+        left: 323.03px;
+        top: 114.63px;
+        height: 21.20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks6 {
+        left: 226.66px;
+        top: 128.74px;
+        height: 21.20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks7 {
+        left: 323.80px;
+        top: 374.26px;
+        height: 21.2%;
+        width: auto;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    #blocks8 {
+        left: 223.57px;
+        top: 245.94px;
+        width: 25.2%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks9 {
+        left: 68.23px;
+        top: 321.65px;
+        width: 40.63%;
+        height: auto;
+        position: absolute;
+    }
+    #items0 {
+        left: 188.11px;
+        top: 52.61px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+        visibility: hidden;
+    }
+    #items1 {
+        left: 38.54px;
+        top: 230.11px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+        visibility: hidden;
+    }
+    #items2 {
+        left: 301.44px;
+        top: 318.65px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+        visibility: hidden;
+    }
+    #title {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 40px;
+        width: 375px;
+        border: solid 1px;
+        background-color: azure;
+        text-align: center;
+        font-size: 18px;
+        color: darkblue;
+        line-height: 7.5px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #time {
+        font-size: 21px;
+    }
+    #base {
+        touch-action: none;
+        background-image: url("../game_images/house10.png");
+        background-size: cover;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 375px;
+        height: 507px;
+        border: solid 1px;
+    }
+
+    #fish {
+        height: 200px;
+        background-image: url("../game_images/fish.gif");
+        background-size: cover;
+        z-index: 5;
+    }
+    #gamestart {
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        width: 280px;
+        height: 200px;
+        transform: scale(1.0);
+    }
+    #gameover {
+        position: absolute;
+        top: 25%;
+        left: 8%;
+        width: 320px;
+        height: 200px;
+        transform: scale(0.8);
+    }
+    #leaderBoard {
+        position: absolute;
+        top: 10%;
+        left: 12%;
+        width: 280px;
+        height: 400px;
+        transform: scale(1.0);
+    }
+
+    #water {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 5;
+        background-color: aqua;
+        height: 200px;
+        width: 90px;
+        opacity: 0.6;
+        max-height: 200px;
+        min-height: 3px;
+    }
+    #belowest {
+        position: absolute;
+        top: 547px;
+        left: 0px;
+        height: 80px;
+        width: 375px;
+        border: solid 1px;
+        background-color: #382F71;
+        border: solid 1px;
+    }
+}
+
+@media screen and (min-width: 394.6px) {
+    #blocks0 {
+        left: 0px;
+        top: 0px;
+        width: 37%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks1 {
+        left: 239.05px;
+        top: 0px;
+        width: 40%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks2 {
+        left: 0px;
+        top: 143.78px;
+        height: 20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks3 {
+        left: 85.07px;
+        top: 144.72px;
+        height: 20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks4 {
+        left: 184.60px;
+        top: 127.28px;
+        height: 20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks5 {
+        left: 356.45px;
+        top: 126.34px;
+        height: 20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks6 {
+        left: 250.11px;
+        top: 141.9px;
+        height: 20%;
+        width: auto;
+        position: absolute;
+    }
+    #blocks7 {
+        left: 357.3px;
+        top: 412.5px;
+        height: 20%;
+        width: auto;
+        position: absolute;
+        transform: scaleX(-1);
+    }
+    #blocks8 {
+        left: 246.7px;
+        top: 271.07px;
+        width: 24%;
+        height: auto;
+        position: absolute;
+    }
+    #blocks9 {
+        left: 75.28px;
+        top: 354.51px;
+        width: 40%;
+        height: auto;
+        position: absolute;
+    }
+    #items0 {
+        left: 207.57px;
+        top: 57.98px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+    }
+    #items1 {
+        left: 42.53px;
+        top: 253.62px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+    }
+    #items2 {
+        left: 332.62px;
+        top: 351.21px;
+        height: 13%;
+        width: auto;
+        position: absolute;
+    }
+    #title {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 45px;
+        width: 414px;
+        border: solid 1px;
+        background-color: azure;
+        text-align: center;
+        font-size: 20px;
+        color: darkblue;
+        line-height: 10.0px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #time {
+        font-size: 25px;
+    }
+    #base {
+        touch-action: none;
+        background-image: url("../game_images/house10.png");
+        background-size: cover;
+        position: absolute;
+        top: 45px;
+        left: 0px;
+        width: 414px;
+        height: 560px;
+        border: solid 1px;
+    }
+
+    #fish {
+        height: 200px;
+        background-image: url("../game_images/fish.gif");
+        background-size: cover;
+        z-index: 5;
+    }
+    #water {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 5;
+        background-color: aqua;
+        height: 200px;
+        width: 90px;
+        opacity: 0.5;
+        max-height: 200px;
+        min-height: 3px;
+    }
+
+    #gamestart {
+        position: absolute;
+        top: 10%;
+        left: 16%;
+        width: 280px;
+        height: 200px;
+        transform: scale(1.0);
+    }
+    #gameover {
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        width: 320px;
+        height: 200px;
+        transform: scale(1.0);
+    }
+    #leaderBoard {
+        position: absolute;
+        top: 13%;
+        left: 15%;
+        width: 280px;
+        height: 400px;
+        transform: scale(1.0);
+    }
+
+    #belowest {
+        position: absolute;
+        top: 605px;
+        left: 0px;
+        height: 80px;
+        width: 414px;
+        border: solid 1px;
+        background-color: #382F71;
+        border: solid 1px;
+    }
+}

@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'grinchedregular';
+    src: url('../fonts/grinchedregular-webfont.woff2') format('woff2'),
+    url('../fonts/grinchedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('../images/bg5.jpg');
+    font-family: grinchedregular;
+}
+
+.navbar-toggle {
+    float: left;
+    border: none;
+}
+
+.navbar-header {
+    height: 85px;
+    background: #2e61a0;
+    border: 1px white solid;
+}
+
+#title {
+    font-size: 30pt;
+    margin-left: 75%;
+    margin-top: 25%;
+    font-family: grinchedregular;
+
+}
+
+#sun {
+    height: 50px;
+    width: 50px;
+}
+
+.collapse {
+    background-color: white;
+}
+
+.collapse .nav .dropdown .dropdown-toggle:active {
+    background-color: gray;
+}
+
+.collapse .nav .dropdown .dropdown-toggle:visited {
+    background-color: gray;
+}
+
+#section {
+    text-align: center;
+    table-layout: auto;
+    padding: 5%;
+    float: left;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: grinchedregular;
+}
+
+button {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    border: 2px black solid;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    width: auto;
+    height: 250px;
+    background-color: black;
+    display: none;
+}
+
+.cursor {
+    cursor: pointer
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+#logged {
+    font-size: 25pt;
+    color: cyan;
+}
+
+#dropdownMenuButton {
+    transform: translate(120px, 20px);
+    background-color: #2e61a0;
+    border: #2e61a0;
+}
+
+#menu {
+    float: right;
+    transform: translateX(210px);
+    font-family: grinchedregular;
+}
+
+.dropdown-item {
+    font-size: 15pt;
+}
+
+@media only screen and (max-width: 330px) {
+    #title {
+        font-size: 30pt;
+        margin-left: 40%;
+        margin-top: 25%;
+        font-family: grinchedregular;
+        color: cyan;
+    }
+
+    #dropdownMenuButton {
+        /* transform: translate(24%, 3%);*/
+        transform: translate(70px, 20px);
+        background-color: #2e61a0;
+        border: #2e61a0;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .navbar-header {
+        display: none;
+    }
+}

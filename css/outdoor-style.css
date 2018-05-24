@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'grinchedregular';
+    src: url('../fonts/grinchedregular-webfont.woff2') format('woff2'),
+    url('../fonts/grinchedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+    font-family: grinchedregular;
+    text-align: center;
+    font-size: 40pt;
+    margin-left: 20%;
+}
+
+.glyphicon {
+    font-size: 40pt;
+    position: absolute;
+}
+
+ul li {
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.background-image {
+    display: block;
+    background-image: url('../images/bg5.jpg');
+    width: 375px;
+    height: 667px;
+    overflow-y: scroll;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.content {
+    position: absolute;
+    margin-top: -180%;
+    height: 700px;
+    right: 0;
+    z-index: 9999;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-y: visible;
+}
+
+#back {
+    transform: translateY(5px);
+}

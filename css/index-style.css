@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'water_parkregular';
+    src: url('../fonts/water_park-webfont.woff2') format('woff2'),
+    url('../fonts/water_park-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'grinchedregular';
+    src: url('../fonts/grinchedregular-webfont.woff2') format('woff2'),
+    url('../fonts/grinchedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: url("../images/bg4.jpg");
+}
+
+.navbar-toggle {
+    float: left;
+    border: none;
+}
+
+.navbar-header {
+    height: 85px;
+    background: #2e61a0;
+    border: 1px white solid;
+}
+
+#title {
+    font-size: 30pt;
+    margin-left: 70%;
+    margin-top: 25%;
+    font-family: grinchedregular;
+    color: #d3f3ff;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+    font-size: 12vw;
+    z-index: 1000;
+}
+
+#sun {
+    height: 50px;
+    width: 50px;
+}
+
+.car {
+    font-family: grinchedregular;
+    transform: translate(0px, 15px);
+    color: #2d89e5;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: solid;
+    font-size: 40pt;
+}
+
+#tip {
+    font-family: grinchedregular;
+    transform: translate(0px, -40px);
+    color: #2d89e5;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: solid;
+    font-size: 40pt;
+}
+
+.btn {
+    transform: translate(50px, 100px);
+    width: 270px;
+    height: 95px;
+    background: url('../images/btn2.png');
+    border: none;
+}
+
+.collapse {
+    background-color: white;
+}
+
+.collapse .nav .dropdown .dropdown-toggle:active {
+    background-color: gray;
+}
+
+.collapse .nav .dropdown .dropdown-toggle:visited {
+    background-color: gray;
+}
+
+#logged {
+    font-size: 25pt;
+    color: #a8e0f4;
+    transform: translate(-10px, 5px);
+}
+
+#dropdownMenuButton {
+    transform: translate(120px, 20px);
+    background-color: #2e61a0;
+    border: #2e61a0;
+}
+
+#menu {
+    float: right;
+    transform: translateX(210px);
+    font-family: grinchedregular;
+}
+
+.dropdown-item {
+    font-size: 15pt;
+}
+
+#vid {
+    transform: translateX(0px);
+}
+
+@media only screen and (max-width: 330px) {
+    #title {
+        font-size: 30pt;
+        margin-left: 40%;
+        margin-top: 25%;
+        font-family: grinchedregular;
+
+    }
+
+    #dropdownMenuButton {
+        /* transform: translate(24%, 3%);*/
+        transform: translate(70px, 20px);
+        background-color: #2e61a0;
+        border: #2e61a0;
+    }
+    .btn {
+        transform: translate(30px, 100px);
+        width: 270px;
+        height: 95px;
+        background: url('../images/btn2.png');
+        border: none;
+    }
+
+}
+
+@media only screen and (min-width: 500px) {
+    .navbar-header {
+        display: none;
+    }
+}
